@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
+    position: relative;
+  }
+
+#navbar{
+    position: fixed;
+    flex-basis: 30%; 
+    padding: 2em; 
+    background-color: cadetblue;
+}
+
+#main-doc{
+    display: flex;
+    flex-basis: 70%;
+    text-align: center;
+    background-color: blueviolet;
+}

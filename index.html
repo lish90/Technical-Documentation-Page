@@ -8,33 +8,34 @@
 </head>
 
 <body>
+  <div class="container">
     <nav id="navbar">
         <header> JS Statements & declarations</header>
         <ul>
-            <li class="nav-link">
-                <a href="#Intro-section">Intro-section</a>
+            <li>
+                <a class="nav-link" href="#Intro-section">Intro-section</a>
             </li>
-            <li class="nav-link">
-                <a href="#Control_flow">Control_flow</a>
+            <li>
+                <a class="nav-link" href="#Control_flow">Control_flow</a>
             </li>
-            <li class="nav-link">
-                <a href="#Declarations">Declarations</a>
+            <li>
+                <a class="nav-link" href="Declarations">Declarations</a>
             </li>
-            <li class="nav-link">
-                <a href="#Functions_and_classes">Functions_and_classes</a>
+            <li>
+                <a class="nav-link" href="#Functions_and_classes">Functions_and_classes</a>
             </li>
-            <li class="nav-link">
-                <a href="#Iterations">Iterations</a>
+            <li>
+                <a class="nav-link" href="#Iterations">Iterations</a>
             </li>
-            <li class="nav-link">
-                <a href="#Others">Others</a>
+            <li>
+                <a class="nav-link" href="#Others">Others</a>
             </li>
         </ul>
 
     </nav>
     <main id="main-doc">
         <section class="main-section" id="Intro-section">
-            <header >Intro section</header>
+            <header>Intro section</header>
             <article>
                 <p>JavaScript applications consist of statements with an appropriate syntax.
                     A single statement may span multiple lines. Multiple statements may occur on a single
@@ -44,75 +45,84 @@
         </section>
         <section class="main-section" id="Control_flow">
             <header>Control flow</header>
-            <article> <p>consit of property of :</p>
+            <article>
+                <p>consit of property of :</p>
                 <li>
-                   <h3>Block </h3> 
-                    <p><em>defination:</em>  <br> A block statement (or compound statement in other languages) 
-                       is used to group zero or more statements. The block is delimited by a pair 
-                       of braces (“curly brackets”) and may optionally be labelled: </p>
-                       <code>var x = 1;
+                    <h3>Block </h3>
+                    <p><em>defination:</em> <br> A block statement (or compound statement in other languages)
+                        is used to group zero or more statements. The block is delimited by a pair
+                        of braces (“curly brackets”) and may optionally be labelled: </p>
+                    <code>var x = 1;
                         let y = 1;
-                        
+
                         if (true) {
-                          var x = 2;
-                          let y = 2;
+                        var x = 2;
+                        let y = 2;
                         }
-                        
+
                         console.log(x);
                         // expected output: 2
-                        
+
                         console.log(y);
                         // expected output: 1</code>
-                    </li>
+                </li>
                 <li>
-                    <h3>if...else</h3> 
-                    <p>The <em>if statement</em>executes a statement if a specified condition is truthy. 
-                       If the condition is falsy, another statement can be executed</p>
-                       <code>if (condition)
+                    <h3>if...else</h3>
+                    <p>The <em>if statement</em>executes a statement if a specified condition is truthy.
+                        If the condition is falsy, another statement can be executed</p>
+                    <code>if (condition)
                         statement1
-                     [else
+                        [else
                         statement2]</code>
-                        <p>condition
-                            An expression that is considered to be either truthy or falsy.
-                            statement1
-                            Statement that is executed if condition is truthy. Can be any statement, including further nested if statements. To execute multiple statements, use a block statement ({ ... }) to group those statements. To execute no statements, use an empty statement.
-                            statement2
-                            Statement that is executed if condition is falsy and the else clause exists. Can be any statement, including block statements and further nested if statements.</p>
+                    <p>condition
+                        An expression that is considered to be either truthy or falsy.
+                        statement1
+                        Statement that is executed if condition is truthy. Can be any statement, including further
+                        nested if statements. To execute multiple statements, use a block statement ({ ... }) to group
+                        those statements. To execute no statements, use an empty statement.
+                        statement2
+                        Statement that is executed if condition is falsy and the else clause exists. Can be any
+                        statement, including block statements and further nested if statements.</p>
                 </li>
                 <li>
                     <h3>throw</h3>
-                    
-                    <p> defination:The <em> throw statement</em> throws a user-defined exception. Execution of the current function will stop (the statements after throw won't be executed),
-                        <br> and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate. </p>
-                        <code>function getRectArea(width, height) {
-                            if (isNaN(width) || isNaN(height)) {
-                              throw "Parameter is not a number!";
-                            }
-                          }
-                          
-                          try {
-                            getRectArea(3, 'A');
-                          }
-                          catch(e) {
-                            console.error(e);
-                            // expected output: "Parameter is not a number!"
-                          }
-                          </code>
-                          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw"> More information on throw-MDN</a>
-                    </li>
+
+                    <p> defination:The <em> throw statement</em> throws a user-defined exception. Execution of the
+                        current function will stop (the statements after throw won't be executed),
+                        <br> and control will be passed to the first catch block in the call stack. If no catch block
+                        exists among caller functions, the program will terminate. </p>
+                    <code>function getRectArea(width, height) {
+                        if (isNaN(width) || isNaN(height)) {
+                        throw "Parameter is not a number!";
+                        }
+                        }
+
+                        try {
+                        getRectArea(3, 'A');
+                        }
+                        catch(e) {
+                        console.error(e);
+                        // expected output: "Parameter is not a number!"
+                        }
+                    </code>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw"> More
+                        information on throw-MDN</a>
+                </li>
                 <li>
                     <h3>try...catch</h3>
-                    <p>The <em>try...catch</em> statement marks a block of statements to try and specifies a response should an exception be thrown.</p>
+                    <p>The <em>try...catch</em> statement marks a block of statements to try and specifies a response
+                        should an exception be thrown.</p>
                     <code>try {
                         nonExistentFunction();
-                      }
-                      catch(error) {
+                        }
+                        catch(error) {
                         console.error(error);
                         // expected output: ReferenceError: nonExistentFunction is not defined
                         // Note - error messages will vary depending on browser
-                      }
-                      </code>
-                      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch"> more infor MDN</a>
+                        }
+                    </code>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch">
+                        more infor MDN</a>
                 </li>
             </article>
         </section>
@@ -120,15 +130,38 @@
             <header> Declarations </header>
             <article>
                 <div class="let">
-
+                    <article>
+                        <p>The <em> let </em>statement declares a block-scoped local variable, optionally initializing
+                            it to a value.</p>
                 </div>
-               <div class="const">
-                   
-               </div>
+                <div class="const">
+                    <p>Constants are block-scoped, much like variables defined using the <em>let</em> keyword. The value
+                        of a constant can't be changed through reassignment, and it can't be redeclared.</p>
+                </div>
             </article>
         </section>
         <section class="main-section" id="Functions_and_classes">
             <header>Functions and classes</header>
+            <article>
+                <div> 
+                    <h3>Functions_and_classes</h3>
+                    <p></p>
+                </div>
+                <div>
+                    <h3>function</h3>
+                </div>
+                <div>
+                    <h3>async function</h3>
+                </div>
+                <div>
+                    <h3>return</h3>
+                </div>
+                <div>
+                    <h3>class</h3>
+
+                </div>
+
+            </article>
         </section>
         <section class="main-section" id="Iterations">
             <header> Iterations </header>
@@ -137,6 +170,8 @@
             <header>Others</header>
         </section>
     </main>
+</div>
 </body>
 
 </html>
+
