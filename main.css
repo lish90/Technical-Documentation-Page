@@ -23,7 +23,7 @@ html {
 }
 
 #main-doc{
-    display: flex;
+    display: -moz-grid;
     flex-basis: 70%;
     text-align: center;
     background-color: blueviolet;
