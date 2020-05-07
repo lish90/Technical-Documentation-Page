@@ -16,11 +16,30 @@ html {
   }
 
 #navbar{
-  flex-basis: 40%;
   position: fixed;
   padding: 2em; 
-  width: 23%;
-  background-color: cadetblue;
+  width: ;
+  height: 100vh;
+  background-color: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+#navbar > header{
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+ul {
+ list-style: none;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+li {
+  margin: 1em;
+  padding: 2em;
+  line-height: 2em;
 }
 
 #main-doc{
@@ -28,9 +47,19 @@ html {
   margin-left: 310px;
   padding: 20px;
   margin-bottom: 110px;
-  /* flex-basis: 70%; */
-  /* max-width: 70%; */
-  max-width:77vw; 
+  max-width: auto; 
+  max-height: auto;
+  text-align: justify;
+  background-color:lightgray;
+}
+
+.main-section > header {
+
+  margin: 0.5em;
+  padding: 0.2em;
   text-align: center;
-  background-color: blueviolet;
+}
+
+.main-section > p {
+  text-align: center;
 }
